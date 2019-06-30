@@ -11,3 +11,5 @@
  (action
   (bash
    "%{deps} re2_c; for ext in ml mli; do mv explicit_dependencies{,_unignored}.$ext; done")))
+
+(env (dev (flags (:standard -warn-error -A))))
